@@ -1,0 +1,29 @@
+ul.wp-block-gallery {
+	// default: flex
+
+	li.blocks-gallery-item {
+
+		figure {
+
+			img {}
+
+			figcaption {}
+
+		}
+
+	}
+
+	&.columns-1 {}
+	&.columns-2 {}
+	&.columns-3 {}
+	&.columns-4 {}
+	&.columns-5 {}
+
+	&.is-cropped {}
+
+	&.alignfull {}
+	&.alignwide {}
+	&.alignleft {}
+	&.alignright {}
+	&.aligncenter {}
+}

@@ -1,0 +1,39 @@
+figure.wp-block-embed {
+
+	&.is-type-rich {
+		//facebook, twitter
+	}
+
+	&.is-type-video {}
+
+	&.wp-has-aspect-ratio {}
+
+	&.wp-embed-aspect-16-9 {}
+
+	&.wp-block-embed-twitter.is-provider-twitter {
+		.wp-block-embed__wrapper {
+			blockquote.twitter-tweet {}
+		}
+	}
+
+	&.wp-block-embed-youtube.is-provider-youtube {
+		.wp-block-embed__wrapper {
+			iframe {}
+		}
+	}
+
+	&.wp-block-embed-facebook.is-provider-facebook {
+		.wp-block-embed__wrapper {
+		 	.fpb-post {}
+		}
+	}
+
+	&.wp-block-embed-wordpress.-is-type-wp-embed {
+		.wp-block-embed__wrapper {}
+	}
+
+	&.wp-block-embed-vimeo.-is-provider-vimeo {
+		.wp-block-embed__wrapper {}
+	}
+
+}

@@ -1,0 +1,41 @@
+.site-nav {
+	text-align: center;
+}
+
+.site-nav__item {
+	display: inline-block;
+	margin: 0;
+	padding: .5rem;
+	font-size: 1.25rem;
+	font-weight: 700;
+	text-decoration: none;
+
+	@include m_up( $desktop ) {
+		margin: 0 -.5rem -.5rem 1.5rem;
+	}
+}
+
+.posts-navigation {
+	margin-top: (2 * #{$line-height});
+	padding-top: calc((2 * #{$line-height}) - 1px );
+	border-top: 1px solid rgba(0,0,0,.2);
+}
+
+.nav-links {
+	display: flex;
+	justify-content: space-between;
+}
+
+.nav-links a {
+	font-size: 2rem;
+	line-height: 3.3333333rem;
+	text-decoration: none;
+}
+
+.nav-previous {
+	display: inline-block;
+}
+
+.nav-next {
+	text-align: right;
+}

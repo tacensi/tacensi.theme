@@ -1,0 +1,15 @@
+.post + .post {
+	margin-top: (2 * $line-height);
+	padding-top: calc((2 * #{$line-height}) - 1px);
+	border-top: 1px solid rgba(0,0,0,.2);
+}
+
+.article-title {
+	margin-top: 0;
+}
+
+figcaption {
+	text-align: center;
+	font-size: .9rem;
+	font-style: italic;
+}

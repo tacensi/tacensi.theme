@@ -1,0 +1,26 @@
+.site-header {
+	padding: $line-height 0 (3 * $line-height);
+}
+
+@media (min-width: $desktop) {
+
+	.site-header__container {
+		max-width: 60rem;
+		display: flex;
+		align-items: flex-end;
+		justify-content: space-between;
+	}
+}
+
+.site-logo {
+	margin: 0;
+	max-width: 21rem;
+
+	@include m_down($desktop) {
+		margin-bottom: $line-height;
+	}
+}
+
+.site-logo__svg {
+
+}

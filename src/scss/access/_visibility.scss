@@ -1,0 +1,20 @@
+/**
+ * Visually hidden but screen-reader accessible
+ * @stolen from https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ */
+.screen-reader-text,
+.visually-hidden {
+  position: absolute !important;
+  height: 1px; width: 1px;
+  overflow: hidden;
+  clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px);
+}
+
+/**
+ * @workaround Remove focus from <main> element when using tabindex="-1" hack for skipnav link
+ * @link https://code.google.com/p/chromium/issues/detail?id=37721
+ */
+.tabindex:focus {
+	outline: none;
+}

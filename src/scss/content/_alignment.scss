@@ -1,0 +1,65 @@
+/**
+ * Alignment
+ **/
+.alignwide {
+	margin-left: -7.5em;
+	margin-right: -7.5em;
+	max-width: 96rem;
+}
+
+
+.alignfull {
+	margin-left: calc( -100vw / 2 + 100% / 2 );
+	margin-right: calc( -100vw / 2 + 100% / 2 );
+	max-width: 99.45vw !important;
+	width: auto;
+
+	img {
+		width: 100%;
+	}
+}
+
+.alignleft {
+	/*rtl:ignore*/
+	float: left;
+	margin-top: 0;
+	margin-left: 0;
+	/*rtl:ignore*/
+	margin-right: ($line-height / 2);
+
+	// @include media(tablet) {
+	@include m_up ($desktop) {
+		max-width: calc(4 * (100vw / 12));
+		/*rtl:ignore*/
+		margin-right: $line-height;
+	}
+}
+
+.alignright {
+	/*rtl:ignore*/
+	float: right;
+	max-width: calc(5 * (100vw / 12));
+	margin-top: 0;
+	margin-right: 0;
+	/*rtl:ignore*/
+	margin-left: ($line-height / 2);
+
+	@include m_up($desktop) {
+	// @include media(tablet) {
+		max-width: calc(4 * (100vw / 12));
+		margin-right: 0;
+		/*rtl:ignore*/
+		margin-left: $line-height;
+	}
+}
+
+.aligncenter {
+	margin-left: auto;
+	margin-right: auto;
+
+	@include m_up($desktop) {
+	// @include media(tablet) {
+		margin-left: 0;
+		margin-right: 0;
+	}
+}
